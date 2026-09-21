@@ -1,0 +1,54 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class book
+{
+private:
+int bookID;
+string title;
+string author;
+double price;
+
+public:
+
+book()
+{
+
+bookID=101;
+title="C++programing";
+author="bjarne stroustrup";
+price=500.00;
+}
+
+book(int id,string t,string a,double p)
+{
+bookID=id;
+title=t;
+author=a;
+price=p;
+}
+
+void display()
+{
+cout<<"bookID:"<<bookID<<endl;
+cout<<"title:"<<title<<endl;
+cout<<"author:"<<author<<endl;
+cout<<"--------"<<endl;
+}
+};
+
+int main()
+{
+
+book b1;
+
+book b2;(102,"object oriented programing","robertlafore",650.00);
+
+cout<<"first book details:"<<endl;
+b1.display();
+
+cout<<"second book details:"<<endl;
+b2.display();
+
+return 0;
+}
