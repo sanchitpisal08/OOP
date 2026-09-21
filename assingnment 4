@@ -42,7 +42,7 @@ int main()
 
 book b1;
 
-book b2;(102,"object oriented programing","robertlafore",650.00);
+book b2(102,"object oriented programing","robertlafore",650.00);
 
 cout<<"first book details:"<<endl;
 b1.display();
