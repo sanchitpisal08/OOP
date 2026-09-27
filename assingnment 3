@@ -43,11 +43,11 @@ int main()
 {
     // Using a standard fixed-size array instead of vector
     const int MAX_EMPLOYEES = 2;
-    Employee staffList[MAX_EMPLOYEES];
+    Employee s1[MAX_EMPLOYEES];
 
     // Populating employee details manually
-    staffList[0].setDetails(101, "Alice Smith", "HR", 55000.0);
-    staffList[1].setDetails(102, "Bob Jones", "Engineering", 75000.0);
+    s1[0].setDetails(101, "Alice Smith", "HR", 55000.0);
+    s1[1].setDetails(102, "Bob Jones", "Engineering", 75000.0);
 
     // Simulate HR authorization check
     bool isAuthorizedHR = true;
@@ -56,7 +56,7 @@ int main()
 
     for (int i = 0; i < MAX_EMPLOYEES; ++i)
     {
-        staffList[i].displayInfo(isAuthorizedHR);
+        s1[i].displayInfo(isAuthorizedHR);
     }
 
     return 0;
