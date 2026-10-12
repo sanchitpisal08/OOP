@@ -41,4 +41,3 @@ book.displayBook();
 return 0;
 }
 
-Dr. Anjali
